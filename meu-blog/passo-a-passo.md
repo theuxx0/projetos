@@ -4,8 +4,10 @@
   ├── about.html
   ├── contact.html
   ├── styles
-  │     └── main.css
+  │    │ └── main.css
+  │    └── form.css
   ├── scripts
-  │     └── main.js
+  │    │ └── main.js
+  │    └── form.js
   └── images
-        └── (aqui vão suas imagens)
+        └── (imagens)

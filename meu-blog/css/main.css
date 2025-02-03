@@ -30,6 +30,7 @@
   nav ul li {
     display: inline;
     margin-right: 15px;
+    
   }
   
   nav ul li a {
@@ -49,6 +50,14 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
+  .posts article h3 a {
+    color: #0055ff;
+    text-decoration: none;
+  }
+  
+  .posts article h3 a:hover {
+    text-decoration: underline;
+  }
   footer {
     text-align: center;
     margin-top: 20px;
