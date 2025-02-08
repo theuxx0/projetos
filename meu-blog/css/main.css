@@ -51,12 +51,16 @@
   }
   
   .posts article h3 a {
-    color: #0055ff;
+    color: #ff0055;
     text-decoration: none;
   }
   
   .posts article h3 a:hover {
-    text-decoration: underline;
+    border:none 1px solid;
+    padding: 3px;
+    background-color: #efefefbe;
+    border-radius: 5px;
+
   }
   footer {
     text-align: center;
