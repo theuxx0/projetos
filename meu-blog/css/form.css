@@ -70,3 +70,41 @@
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    padding: 20px;
+}
+
+.conteiner{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    gap: 20px;
+}
+.container section{
+    flex: 1;
+}
+.profile{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img{
+    width: 100%;
+}
