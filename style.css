@@ -1,0 +1,151 @@
+/* ===== Reset ===== */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+
+    /* Fundo com imagem minimalista via URL */
+    background: 
+        linear-gradient(rgba(13,27,42,0.85), rgba(27,38,59,0.85)), /* Overlay escuro */
+        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+
+    background-size: cover;
+    color: white;
+    line-height: 1.6;
+    min-height: 100vh;
+    position: relative;
+}
+header {
+    background: rgba(27, 38, 59, 0.6); /* Fundo semi-transparente */
+    backdrop-filter: blur(8px);        /* Borrão no fundo */
+    -webkit-backdrop-filter: blur(8px); /* Suporte Safari */
+    padding: 20px;
+    text-align: center;
+    color: #ffd700;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(27, 38, 59, 0.4);  /* Fundo semi-transparente */
+    backdrop-filter: blur(10px);         /* Borrão no fundo */
+    -webkit-backdrop-filter: blur(10px); /* Suporte Safari */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+h2 {
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background: rgba(27, 38, 59, 0.9);
+    color: #ccc;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Links dourados */
+a {
+    color: #ffd700;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Responsividade ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+    nav a {
+        margin: 0 10px;
+        font-size: 0.95rem;
+    }
+    section {
+        margin: 20px 10px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 1.3rem;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    nav a {
+        display: block;
+        padding: 6px;
+        font-size: 0.9rem;
+    }
+    section {
+        margin: 15px;
+        padding: 15px;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    footer {
+        font-size: 0.8rem;
+    }
+}
